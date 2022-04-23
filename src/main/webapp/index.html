@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de Média</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <label for="number">Adicione um número na lista:</label>
+        </div>
+        <div>
+            <input id="number" type="number">
+            <button>Adicionar</button>
+        </div>
+
+        <form action="SvMedia" method="post">
+            <div>
+                <textarea id="number-list" cols="50" rows="4" readonly name="textarea"></textarea>
+            </div>
+            <div>
+                <button class="btnSubmit" type="submit">Calcular Média</button>
+            </div>
+            <div class="resultDiv">
+                <span class="result" id="resultMedia">s</span>
+            
+                <span class="result" id="resultModa">s</span>
+            
+                <span class="result" id="resultMediana">s</span>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

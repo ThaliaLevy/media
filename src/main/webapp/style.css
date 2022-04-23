@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.resultDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(136, 204, 204);
+    padding: .25rem;
+    border-radius: .5rem;
+    margin-top: 10px;
+    transform: translate3d(0,30px,0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.result.ativo{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
